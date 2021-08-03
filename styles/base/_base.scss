@@ -112,3 +112,70 @@ input[type="text"] {
   position: relative;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .35);
 }
+
+.white-line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.white-line:before {
+  content: '';
+  width: 125px;
+  height: 1px;
+  position: absolute;
+
+  background-color: $white;
+}
+
+.white-line:after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  bottom: 23px;
+  position: absolute;
+  background-color: $white;
+  border-radius: 0 0 30px 25px;
+}
+
+.red-line {
+  position: relative;
+
+ transition: ease-in-out all .3s;
+}
+
+.red-line:before {
+  content: '';
+  background-color: $torch-red;
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  top: 20px;
+  right: initial;
+  bottom: initial;
+  left: -45px;
+  transition: ease-in-out all .3s;
+}
+
+.section-bg-color {
+  background: linear-gradient(to right,#17161a, #242124 50% ,#17161a);
+}
+
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 133px 0;
+}
+
+.img-scale {
+  width: 100%;
+  transition: ease-in-out all .3s;
+  transform: scale(1);
+
+
+}

@@ -55,6 +55,10 @@ var swipers = () => {
   
 }
 
+var tabs = () => {
+  
+}
+
 
 // initialize the functions
 headerScrolled();

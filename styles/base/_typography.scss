@@ -7,3 +7,14 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+.section-title-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: $white;
+}
+
+.section-content-text {
+  font-size: 17px;
+  color: $silver;
+}
