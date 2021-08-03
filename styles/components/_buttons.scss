@@ -57,6 +57,24 @@
   }
 }
 
+.btn-red {
+  background-color: #ff0e1f;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+
+.btn-red-hover {
+  &:hover {
+    // box-shadow: 0 3px 3px 0 rgb(1 1 1 / 55%);
+    box-shadow: 0 3px 3px 0 rgb(1, 1, 1);
+    text-decoration: none;
+    color: #fff;
+  }
+  
+}
+
 @media (max-width: 991px) {
   .btn {
     padding: 8px 25px;

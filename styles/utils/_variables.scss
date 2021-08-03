@@ -11,8 +11,11 @@ $font-helveticaneue-light: 'HelveticaNeue-Light';
 $font-helvetica-black: 'HelveticaNeue-Black';
 $font-helvetica-black-hollow: 'HelveticaNeue-Black-Hollow';
 
+
+$font-rubik: 'rubik-regular';
+
 /// @type List
-$text-font-stack: $font-helveticaneue, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-rubik, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'rubik-regular', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List

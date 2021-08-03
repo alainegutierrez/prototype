@@ -60,13 +60,26 @@
   </header>
   <main class="page-home">
     <section class="hero">
-      <div class="content">
-        <h1>Simplicity</h1>
-        <h4>Coding made simpler</h4>
-        <a href="#" class="btn btn-white-outline">Learn More</a>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-content" style="background-image: url(assets/images/p-h1-slider-1-background-img.jpg);">
+           <p>ONWARD TO GLORY!</p>
+           <a href="#" class="btn-red triangle-md btn-red-hover"> BUY THEME</a>
+          </div>
+          <div class="swiper-slide swiper-content" style="background-image: url(assets/images/p-h1-slider-2-background-img.jpg);">
+            <p>YOU SPEAK OF JUSTICE?</p>
+            <a href="#" class="btn-red triangle-md btn-red-hover"> BUY THEME</a>
+          </div>
+          <div class="swiper-slide swiper-content" style="background-image: url(assets/images/p-h1-slider-3-background-img.jpg);">
+            <p>REPEL THE INVADERS!</p>
+            <a href="#" class="btn-red triangle-md btn-red-hover"> BUY THEME</a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section class="blog">
+    <!-- <section class="blog">
       <div class="bg-image lazyload" style="background-image: url(./assets/images/bg-blog.jpg);"></div>
       <div class="overlay"></div>
       <div class="container">
@@ -155,8 +168,8 @@
           <a href="#" class="btn btn-white">View All</a>
         </div>
       </div>
-    </section>
-    <section class="cta">
+    </section> -->
+    <!-- <section class="cta">
       <div class="bg-video">
         <video autoplay loop="" muted="">
           <source src="./assets/videos/bg-video.mp4" type="video/mp4">
@@ -168,9 +181,58 @@
         <h2>Lorem <b>Ipsum</b>, Dolor <b>Sit Amet</b>, Adipiscing <b>Consectetur</b></h2>
         <a href="#" class="btn btn-white-outline">Get Started</a>
       </div>
+    </section> -->
+    <section class="partners section-shadow">
+      <div class="container">
+        <div class="swiper-container mySwiperPartners">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-1.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-1.png" class="client-img client-img-2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-2.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-2.png" class="client-img client-img-2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-3.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-3.png" class="client-img client-img-2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-4.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-4.png" class="client-img client-img-2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-5.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-5.png" class="client-img client-img-2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="partner-hover">
+                <img src="assets/images/p-h1-client-img-6.png" class="client-img client-img-1">
+                <img src="assets/images/p-h1-client-img-6.png" class="client-img client-img-2">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="op-theme">
+      
+    </section>
+ 
   </main>
-  <footer class="footer-main">
+  <!-- <footer class="footer-main">
     <div class="bg-text">
       <span>simplicity</span>
       <span>template</span>
@@ -227,11 +289,15 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
+
+
 
   <script src="scripts/vendors/jquery.min.js" defer onload="" id="jquery_min_js"></script>
   <script src="scripts/vendors/popper.min.js" defer onload="" id="popper_min_js"></script>
   <script src="scripts/vendors/bootstrap.min.js" defer onload="" id="bootstrap_min_js"></script>
+
+  <script src="scripts/vendors/swiper.min.js" defer onload="" id="popper_min_js"></script>
   <script src="scripts/vendors/lazyload.min.js"></script> <!-- move this to the <head> below the last <link> when integrating to WordPress -->
   <script src="scripts/script.js" defer onload="" id="scripts_js"></script>
 </body>
