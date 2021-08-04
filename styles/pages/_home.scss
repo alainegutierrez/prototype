@@ -183,20 +183,35 @@
       overflow: hidden;
       z-index: 1;
 
-      &:hover {
-        // .esports-content {
-        //   bottom: 0;
-        // }
+      // &:hover {
+      //   .esports-content {
+      //     bottom: 0;
+      //   }
 
+      //   .red-line {
+      //     padding-left: 30px;
+      //   }
+
+      //   .red-line:before {
+      //     left: 0;
+      //   }
+
+      //   .img-scale{
+      //     transform: scale(1.1);
+      //   }
+      // }
+    }
+
+    .esports-img-holder {
+      position: relative;
+      z-index: 9;
+
+      &:hover {
         .img-scale{
           transform: scale(1.1);
         }
-
-    
-      }
+      } 
     }
-
- 
 
     .esports-content {
       background-color: $light-black;
@@ -286,11 +301,56 @@
    
   }
 
+  .game-expo {
+  
+    .container {
+      max-width: 1810px;
+    }
+
+    .game-expo-bg {
+     width: 100%;
+     margin: 0;
+    }
+
+    .game-expo-img {
+      // position: relative;
+      // top: -12px;
+
+      .robot-img {
+        width: 80%;
+      }
+    }
+
+    .game-expo-content {
+      color: $white;
+      text-align: left;
+      width: 51%;
+      line-height: 1.1;
+      font-size: 38px;
+      margin: 0 auto;
+
+      .btn-game-expo {
+        text-decoration: none;
+        padding: 15px 66px;
+        font-size: 14px;
+        color: $white;
+      }
+    }
+
+  
+  }
+
   .gallery {
+
+    .container-fluid {
+      padding: 0 5px;
+    }
+
     .gallery-lists {
       display: flex;
       flex-wrap: wrap;
       overflow: hidden;
+      justify-content: space-between;
     }
 
     img {
@@ -301,6 +361,8 @@
     .gallery-list {
       width: 25%;
       overflow: hidden;
+      padding: 5px;
+
 
       &:nth-child(3) {
         width: 50%;
@@ -310,10 +372,15 @@
         width: 50%;
       }
 
-      &:hover {
-        .img-scale{
-          transform: scale(1.1);
-        }
+     
+      }
+
+      .gallery-img {
+        overflow: hidden;
+        &:hover {
+          .img-scale{
+            transform: scale(1.1);
+          }
       }
      
 
@@ -321,6 +388,109 @@
   
 
     
+  }
+
+  .contact-us {
+
+    .contact-us-left {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 30px;
+      }
+      
+  
+      .white-line {
+        justify-content: unset;
+        align-items: unset;
+      }
+  
+      .white-line:after {
+        left: 33px;
+      }
+  
+      .contact-us-desc {
+        margin: 10px 0;
+        padding-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+        transition:  ease-in-out all .3s;
+        margin-top: 10px;
+        &:hover {
+          color: $torch-red;
+
+          i{
+            color: $white;
+          }
+        }
+
+        i {
+          margin-right: 8px;
+          color: $white;
+        }
+      }
+
+    }
+
+    // input[type=email], input[type=text] {
+    //   outline: 0;
+    //   padding: 15px;
+    //   width: 100%;
+    //   border: none;
+    //   background: $baltic-sea;
+
+    //   &:focus {
+    //     border-bottom: 1px solid $red-torch;
+    //   }
+    // }
+
+    input.form-control {
+      background-color: $baltic-sea;
+      outline: 0;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      color: $white;
+      transition: ease-in-out all .3s;
+
+      &:focus {
+        border-bottom: 1px solid $torch-red;
+      }
+    }
+
+    
+    ::placeholder {
+      color: $white;
+    }
+
+    textarea {
+      background-color: $baltic-sea;
+      color: $white;
+      border: none;
+      outline: none;
+      resize: none;
+      height: 150px;
+      padding: 15px;
+      box-shadow: none;
+
+      &:focus {
+        border-bottom: 1px solid $torch-red;
+      }
+    }
+
+    .submit {
+      border: none;
+      width: 100%;
+      padding: 15px;
+      font-size: 15px;
+    }
+
+
   }
 
 
