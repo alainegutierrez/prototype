@@ -155,7 +155,7 @@ input[type="text"] {
   top: 20px;
   right: initial;
   bottom: initial;
-  left: -45px;
+  left: -55px;
   transition: ease-in-out all .3s;
 }
 
@@ -181,4 +181,139 @@ input[type="text"] {
   transition: ease-in-out all .3s;
   transform: scale(1);
 
+}
+
+
+
+.nav-skew {
+  transform: skew( 20deg);
+  transform-origin: 0 100%;
+
+  .nav-link.active {
+    background-color: $torch-red;
+  }
+
+  .nav-style {
+    border: none;
+    border-radius: unset;
+    color: $white;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition: ease-in-out all .3s;
+
+    &:hover {
+      background-color: $torch-red;
+    }
+  }
+
+}
+
+.text-skew {
+  transform: skew( -20deg);
+  color: $white;
+}
+  
+.row-link {
+  display: block;
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    display: block;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.tab-scenes {
+  color: $white;
+  background-color: #0d0d0d;
+  overflow: hidden;
+  margin-top: 75px;  
+
+}
+
+.border-shadow {
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.transition-wrapper {
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    .red-line {
+      padding-left: 30px;
+    }
+
+    .red-line:before {
+      left: 0;
+    }
+  }
+}
+
+.transition-img-holder {
+  &:hover {
+    .img-scale{
+      transform: scale(1.1);
+    }
+  } 
+}
+
+.light-black-content {
+  background-color: $light-black;
+  width: 50%;
+  height: 218px;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: -74px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+  transition: ease-in-out all .3s;
+  z-index: 10;
+
+}
+
+.btn-white-bg {
+  background-color: $white;
+  color: black;
+  padding: 2px 10px;
+  font-size: 13px;   
+  position: relative; 
+  margin-right: 5px;
+  
+  &::after {
+    content: '';
+    width: 5px;
+    border-right: 5px solid transparent;
+    border-bottom: 22px solid $white;
+    position: absolute;
+    top: 0;
+    right: initial;
+    bottom: 0;
+    left: 100%;
+  }
+}
+
+.btn-red-bg {
+  position: relative;
+  padding: 2px 10px;
+  font-size: 13px;   
+  margin-left: 5px;
+  background-color: $torch-red;
+
+  &::after {
+    content: '';
+    width: 5px;
+    border-left: 5px solid transparent;
+    border-top: 22px solid $torch-red;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: initial;
+  }
 }
