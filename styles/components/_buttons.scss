@@ -75,6 +75,16 @@
   
 }
 
+.socmed {
+  text-decoration: none;
+  color: $white;
+  transition: ease-in-out all .3s;
+
+  &:hover {
+    color: $torch-red;
+  }
+}
+
 
 
 

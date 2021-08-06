@@ -6,7 +6,6 @@
 
 .footer-main {
   position: relative;
-  padding: 115px 0;
   overflow: hidden;
   font-size: 18px;
   color: #fff;
@@ -206,6 +205,86 @@
       transform: scale(1);
       transition: .35s ease-in-out all;
     }
+  }
+
+  // prototype
+
+  .bg-wrapper {
+    position: relative;
+    // padding: 115px 0;
+  }
+
+  .border-holder-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 1px solid $black;
+    transform: skew(15deg);
+  }
+
+  .footer-newsletter{
+    width: 420px;
+
+    .newsletter-form {
+      position: relative;
+    }
+    .input {
+      position: relative;
+      background-color: transparent;
+      border-radius: unset;
+      border: unset;
+      width: 100%;
+      border: 0;
+      padding: 10px 10px;
+      border-bottom: 1px solid $black-grey;
+      ~ {
+        .border {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 1px;
+          opacity: 0;
+        }
+      }
+      &:focus {
+        ~ {
+          .border {
+            width: 100%;
+            transition: 0.5s;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .border {
+      border: 1px solid $torch-red !important;
+    }
+
+    .btn-submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: initial;
+      border: 0;
+      background: transparent;
+      pointer-events: all;
+      box-shadow: unset;
+    }
+
+    
+
+  }
+
+  .border-holder-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: 1px solid $black;
+    transform: skew(-15deg);
   }
 
   @media (max-width: 1700px) {

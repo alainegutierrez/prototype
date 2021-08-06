@@ -302,6 +302,7 @@
       height: 100px;
       bottom: 0;
       padding: 10px 30px;
+     
 
       .red-line::before {
         top: 10px;
@@ -311,6 +312,14 @@
         display: flex;
         margin: 8px 0;
       }
+    }
+
+    .secondary-height {
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
     }
    }
   }
